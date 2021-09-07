@@ -23,7 +23,6 @@ const files = (await readdir(filesDir))
 log(`processing ${files}`)
 const ONE_SECOND = 1000
 
-//Quando as funções assíncronas acabarem, o interval morre junto
 setInterval(() => process.stdout.write('.'), ONE_SECOND).unref()
 
 // const combinedStreams = createReadStream(join(filesDir, files[0]))
